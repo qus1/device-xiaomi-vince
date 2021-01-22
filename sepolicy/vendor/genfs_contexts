@@ -1,0 +1,19 @@
+# Leds
+genfscon sysfs /devices/soc/200f000.qcom,spmi/spmi-0/spmi0-00/200f000.qcom,spmi:qcom,pm8953@0:qcom,leds@a100 u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/soc/78b6000.i2c/i2c-2/2-0045/leds                                                    u:object_r:sysfs_graphics:s0
+
+# Power
+genfscon sysfs /devices/soc/soc:qcom,bcl/power_supply                u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/msm-bcl-20/power_supply                  u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/qpnp-typec-9/power_supply                  u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.qcom,spmi:qcom,pmi8950@2:vadc@3100 u:object_r:sysfs_battery_supply:s0
+
+# Graphics
+genfscon sysfs /devices/virtual/graphics/fb0                    u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb1                    u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb2                    u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb3                    u:object_r:sysfs_graphics:s0
+
+# XiaomiParts
+#genfscon sysfs /kernel/sound_control/headphone_gain                             u:object_r:sysfs_headphonegain:s0
+#genfscon sysfs /kernel/sound_control/mic_gain                                   u:object_r:sysfs_micgain:s0
